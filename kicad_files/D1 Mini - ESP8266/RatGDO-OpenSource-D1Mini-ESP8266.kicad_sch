@@ -2,7 +2,14 @@
 
   (uuid d526daf5-1a87-4c4a-b8db-6120ccadc008)
 
-  (paper "A4")
+  (paper "USLetter")
+
+  (title_block
+    (title "RAT-RATGDO TUBEX ESP8266")
+    (date "2023-11-02")
+    (rev "2.5.0")
+    (company "T Fox")
+  )
 
   (lib_symbols
     (symbol "Connector:Screw_Terminal_01x03" (pin_names (offset 4)) (in_bom yes) (on_board yes)
