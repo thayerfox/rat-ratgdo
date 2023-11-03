@@ -2,14 +2,14 @@
 <export version="E">
   <design>
     <source>C:\Git\rat-ratgdo\kicad_files\D1 Mini - ESP8266\RatGDO-OpenSource-D1Mini-ESP8266.kicad_sch</source>
-    <date>2023-11-02 5:56:48 PM</date>
+    <date>2023-11-03 11:09:06 AM</date>
     <tool>Eeschema 7.0.8</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title/>
-        <company/>
-        <rev/>
-        <date/>
+        <title>RAT-RATGDO TUBEX ESP8266</title>
+        <company>T Fox</company>
+        <rev>2.5.0</rev>
+        <date>2023-11-02</date>
         <source>RatGDO-OpenSource-D1Mini-ESP8266.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -302,7 +302,7 @@
         <fp>WEMOS*D1*mini*</fp>
       </footprints>
       <fields>
-        <field name="Reference">U</field>
+        <field name="Reference">U1</field>
         <field name="Value">WeMos_D1_mini</field>
         <field name="Footprint">Module:WEMOS_D1_mini_light</field>
         <field name="Datasheet">https://wiki.wemos.cc/products:d1:d1_mini#documentation</field>
@@ -316,8 +316,8 @@
         <pin num="6" name="MOSI/D7" type="bidirectional"/>
         <pin num="7" name="CS/D8" type="bidirectional"/>
         <pin num="8" name="3V3" type="power_out"/>
-        <pin num="9" name="5V" type="power_in"/>
-        <pin num="10" name="GND" type="power_in"/>
+        <pin num="9" name="5V" type="power_out"/>
+        <pin num="10" name="GND" type="power_out"/>
         <pin num="11" name="D4" type="bidirectional"/>
         <pin num="12" name="D3" type="bidirectional"/>
         <pin num="13" name="SDA/D2" type="bidirectional"/>
@@ -390,26 +390,35 @@
     </net>
     <net code="2" name="+5V">
       <node ref="J2" pin="10" pinfunction="5V" pintype="passive"/>
-      <node ref="U1" pin="9" pinfunction="5V" pintype="power_in"/>
+      <node ref="U1" pin="9" pinfunction="5V" pintype="power_out"/>
     </net>
-    <net code="3" name="BLK{slash}OBST">
+    <net code="3" name="/ESP_RX">
+      <node ref="Q1" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="SDA/D2" pintype="bidirectional"/>
+    </net>
+    <net code="4" name="/ESP_TX">
+      <node ref="Q2" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="U1" pin="14" pinfunction="SCL/D1" pintype="bidirectional"/>
+    </net>
+    <net code="5" name="BLK{slash}OBST">
       <node ref="J1" pin="3" pinfunction="BLK/OBST" pintype="passive"/>
       <node ref="J2" pin="3" pinfunction="BLK/OBST" pintype="passive"/>
       <node ref="R1" pin="1" pintype="passive"/>
     </net>
-    <net code="4" name="DC_CLOSE">
+    <net code="6" name="DC_CLOSE">
       <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="J2" pin="7" pinfunction="DC_CLOSE" pintype="passive"/>
     </net>
-    <net code="5" name="DC_LIGHT">
+    <net code="7" name="DC_LIGHT">
       <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="J2" pin="8" pinfunction="DC_LIGHT" pintype="passive"/>
     </net>
-    <net code="6" name="DC_OPEN">
+    <net code="8" name="DC_OPEN">
       <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="J2" pin="6" pinfunction="DC_OPEN" pintype="passive"/>
     </net>
-    <net code="7" name="GND">
+    <net code="9" name="GND">
       <node ref="J1" pin="1" pinfunction="WHT/GND" pintype="passive"/>
       <node ref="J2" pin="1" pinfunction="WHT/GND" pintype="passive"/>
       <node ref="Q1" pin="2" pinfunction="S" pintype="passive"/>
@@ -420,28 +429,19 @@
       <node ref="R3" pin="2" pintype="passive"/>
       <node ref="R4" pin="2" pintype="passive"/>
       <node ref="R5" pin="2" pintype="passive"/>
-      <node ref="U1" pin="10" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="10" pinfunction="GND" pintype="power_out"/>
     </net>
-    <net code="8" name="Net-(D1-A)">
+    <net code="10" name="Net-(D1-A)">
       <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="U1" pin="4" pinfunction="SCK/D5" pintype="bidirectional"/>
     </net>
-    <net code="9" name="Net-(D2-A)">
+    <net code="11" name="Net-(D2-A)">
       <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="U1" pin="5" pinfunction="MISO/D6" pintype="bidirectional"/>
     </net>
-    <net code="10" name="Net-(D3-A)">
+    <net code="12" name="Net-(D3-A)">
       <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="U1" pin="12" pinfunction="D3" pintype="bidirectional"/>
-    </net>
-    <net code="11" name="Net-(Q1-D)">
-      <node ref="Q1" pin="3" pinfunction="D" pintype="passive"/>
-      <node ref="U1" pin="13" pinfunction="SDA/D2" pintype="bidirectional"/>
-    </net>
-    <net code="12" name="Net-(Q2-G)">
-      <node ref="Q2" pin="1" pinfunction="G" pintype="input"/>
-      <node ref="R3" pin="1" pintype="passive"/>
-      <node ref="U1" pin="14" pinfunction="SCL/D1" pintype="bidirectional"/>
     </net>
     <net code="13" name="Net-(Q3-G)">
       <node ref="Q3" pin="1" pinfunction="G" pintype="input"/>
