@@ -3,19 +3,19 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "7.0.7"
+      "Version": "7.0.8"
     },
-    "CreationDate": "2023-10-31T08:11:39-06:00"
+    "CreationDate": "2023-11-06T13:52:09-08:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "RatGDO-OpenSource-D1Mini-ESP8266",
       "GUID": "52617447-444f-42d4-9f70-656e536f7572",
-      "Revision": "rev?"
+      "Revision": "2.5.0"
     },
     "Size": {
-      "X": 55.1,
-      "Y": 70.1
+      "X": 51.916,
+      "Y": 65.886
     },
     "LayerNumber": 2,
     "BoardThickness": 1.6,
@@ -28,8 +28,8 @@
       "PadToTrack": 0.2,
       "TrackToTrack": 0.2,
       "MinLineWidth": 0.25,
-      "TrackToRegion": 0.5,
-      "RegionToRegion": 0.5
+      "TrackToRegion": 0.2,
+      "RegionToRegion": 0.2
     }
   ],
   "FilesAttributes": [

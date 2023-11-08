@@ -1,0 +1,21 @@
+### Footprint positions - created on Fri Nov  3 11:27:24 2023 ###
+### Printed by KiCad version 7.0.8
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val                   Package                                                        PosX       PosY       Rot  Side
+D1        1N4148WS              D_SOD-323_HandSoldering                                    149.6060  -100.5840  180.0000  top
+D2        1N4148WS              D_SOD-323_HandSoldering                                    149.6060   -98.0440  180.0000  top
+D3        1N4148WS              D_SOD-323_HandSoldering                                    149.6060   -95.5040  180.0000  top
+J1        Screw_Terminal_01x03  TerminalBlock_Phoenix_MKDS-1,5-3_1x03_P5.00mm_Horizontal   124.7140   -98.2980  -90.0000  top
+J2        Conn_01x10            PinHeader_1x10_P2.54mm_Vertical                            161.7980  -107.9500  180.0000  top
+Q1        2N7002                SOT-23                                                     159.0093   -79.7595  180.0000  top
+Q2        AO3400A               SOT-23                                                     159.0093   -74.5828    0.0000  top
+Q3        AO3400A               SOT-23                                                     123.1900   -70.6120  180.0000  top
+Q4        AO3400A               SOT-23                                                     123.1900   -86.6800  180.0000  top
+R1        10k                   R_0805_2012Metric                                          123.1900   -82.5500    0.0000  top
+R2        10k                   R_0805_2012Metric                                          123.1900   -78.7400  180.0000  top
+R3        10k                   R_0805_2012Metric                                          159.1075   -71.2152    0.0000  top
+R4        10k                   R_0805_2012Metric                                          123.1900   -74.9300  180.0000  top
+R5        10k                   R_0805_2012Metric                                          123.1900   -90.1700  180.0000  top
+U1        WeMos_D1_mini         WEMOS_D1_mini_light                                        129.5475   -66.0400    0.0000  top
+## End
