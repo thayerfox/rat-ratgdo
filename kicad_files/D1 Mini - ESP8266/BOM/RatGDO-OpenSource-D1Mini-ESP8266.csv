@@ -1,0 +1,13 @@
+"Id";"Designator";"Footprint";"Quantity";"Designation";"Supplier and ref";
+1;"J2";"PinHeader_1x11_P2.54mm_Vertical";1;"Conn_01x11";;;
+2;"D4";"D_SOD-123";1;"B5819W";;;
+3;"R3,R5,R4,R2,R1";"R_0805_2012Metric_Pad1.20x1.40mm_HandSolder";5;"10k";;;
+4;"Q3,Q4,Q2";"SOT-23_Handsoldering";3;"AO3400A";;;
+5;"D1,D2,D3";"D_SOD-323_HandSoldering";3;"1N4148WS";;;
+6;"U1";"WEMOS_D1_mini_light";1;"WeMos_D1_mini";;;
+7;"C1";"C_0805_2012Metric_Pad1.18x1.45mm_HandSolder";1;"10uF/50V";;;
+8;"U2";"Converter_DCDC_RECOM_R-78HB-0.5_THT";1;"K7805-500R3";;;
+9;"Q1";"SOT-23_Handsoldering";1;"2N7002";;;
+10;"J1";"TerminalBlock_Phoenix_MKDS-1,5-3_1x03_P5.00mm_Horizontal";1;"Screw_Terminal_01x03";;;
+11;"C2";"C_0805_2012Metric_Pad1.18x1.45mm_HandSolder";1;"22uF/10V";;;
+12;"J3";"TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal";1;"Screw_Terminal_01x02";;;

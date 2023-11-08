@@ -56,11 +56,8 @@
         }
       ],
       "drc_exclusions": [
-        "lib_footprint_issues|136021392|116457469|3ede6299-0cc6-44d1-b450-ad428e7166bd|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|117094000|69088000|282e268a-becc-4464-9aa5-e85387970c88|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|142748000|120904000|ac0dea2d-01df-4378-89d1-935e57f3a33a|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|164846000|69088000|122a0f11-1ae7-4669-b44d-86d365a9c005|00000000-0000-0000-0000-000000000000",
-        "starved_thermal|152407500|81280000|92e5d9dd-7ae3-494a-b1f0-24e736575c03|87df1035-eba3-4790-b398-762758deb5d2|B.Cu"
+        "lib_footprint_issues|137545392|98169469|3ede6299-0cc6-44d1-b450-ad428e7166bd|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|157480000|117094000|90115491-617f-4cd7-a51d-e047ab71b97b|00000000-0000-0000-0000-000000000000"
       ],
       "meta": {
         "version": 2
@@ -196,11 +193,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      "lib_symbol_issues|2298700|1308100|a15231ba-da7c-4f66-a032-35bce96297ec|00000000-0000-0000-0000-000000000000|||",
-      "lib_symbol_issues|2298700|977900|379b019b-bd23-4e17-a2be-0dbfd1662791|00000000-0000-0000-0000-000000000000|||",
-      "lib_symbol_issues|444500|1016000|1f04797f-ce7b-4f20-b469-5b534667d557|00000000-0000-0000-0000-000000000000|||"
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -480,8 +473,18 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "fix_passive_vals": false,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 0,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
+    "spice_adjust_passive_values": false,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,
