@@ -3,19 +3,19 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "7.0.7"
+      "Version": "7.0.9"
     },
-    "CreationDate": "2023-10-31T08:11:39-06:00"
+    "CreationDate": "2023-11-09T08:26:50-08:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
-      "Name": "RatGDO-OpenSource-D1Mini-ESP8266",
+      "Name": "RatGDO-OpenSource-D1Mini-ESP8266-Tubez",
       "GUID": "52617447-444f-42d4-9f70-656e536f7572",
-      "Revision": "rev?"
+      "Revision": "2.5.0"
     },
     "Size": {
-      "X": 55.1,
-      "Y": 70.1
+      "X": 51.916,
+      "Y": 65.886
     },
     "LayerNumber": 2,
     "BoardThickness": 1.6,
@@ -28,53 +28,53 @@
       "PadToTrack": 0.2,
       "TrackToTrack": 0.2,
       "MinLineWidth": 0.25,
-      "TrackToRegion": 0.5,
-      "RegionToRegion": 0.5
+      "TrackToRegion": 0.2,
+      "RegionToRegion": 0.2
     }
   ],
   "FilesAttributes": [
     {
-      "Path": "RatGDO-OpenSource-D1Mini-ESP8266-F_Cu.gtl",
+      "Path": "RatGDO-OpenSource-D1Mini-ESP8266-Tubez-F_Cu.gtl",
       "FileFunction": "Copper,L1,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "RatGDO-OpenSource-D1Mini-ESP8266-B_Cu.gbl",
+      "Path": "RatGDO-OpenSource-D1Mini-ESP8266-Tubez-B_Cu.gbl",
       "FileFunction": "Copper,L2,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "RatGDO-OpenSource-D1Mini-ESP8266-F_Paste.gtp",
+      "Path": "RatGDO-OpenSource-D1Mini-ESP8266-Tubez-F_Paste.gtp",
       "FileFunction": "SolderPaste,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "RatGDO-OpenSource-D1Mini-ESP8266-B_Paste.gbp",
+      "Path": "RatGDO-OpenSource-D1Mini-ESP8266-Tubez-B_Paste.gbp",
       "FileFunction": "SolderPaste,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "RatGDO-OpenSource-D1Mini-ESP8266-F_Silkscreen.gto",
+      "Path": "RatGDO-OpenSource-D1Mini-ESP8266-Tubez-F_Silkscreen.gto",
       "FileFunction": "Legend,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "RatGDO-OpenSource-D1Mini-ESP8266-B_Silkscreen.gbo",
+      "Path": "RatGDO-OpenSource-D1Mini-ESP8266-Tubez-B_Silkscreen.gbo",
       "FileFunction": "Legend,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "RatGDO-OpenSource-D1Mini-ESP8266-F_Mask.gts",
+      "Path": "RatGDO-OpenSource-D1Mini-ESP8266-Tubez-F_Mask.gts",
       "FileFunction": "SolderMask,Top",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "RatGDO-OpenSource-D1Mini-ESP8266-B_Mask.gbs",
+      "Path": "RatGDO-OpenSource-D1Mini-ESP8266-Tubez-B_Mask.gbs",
       "FileFunction": "SolderMask,Bot",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "RatGDO-OpenSource-D1Mini-ESP8266-Edge_Cuts.gm1",
+      "Path": "RatGDO-OpenSource-D1Mini-ESP8266-Tubez-Edge_Cuts.gm1",
       "FileFunction": "Profile",
       "FilePolarity": "Positive"
     }
