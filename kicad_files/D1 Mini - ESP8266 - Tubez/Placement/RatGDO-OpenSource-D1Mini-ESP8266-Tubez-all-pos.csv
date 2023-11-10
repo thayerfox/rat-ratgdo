@@ -11,7 +11,7 @@ J3,Screw_Terminal_01x02,"TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizonta
 Q1,2N7002,SOT-23_Handsoldering,159.009257,-79.759515,0,top
 Q2,AO3400A,SOT-23_Handsoldering,159.009257,-74.582843,180,top
 Q3,AO3400A,SOT-23_Handsoldering,122.912,-70.612,0,top
-Q4,AO3400A,SOT-23_Handsoldering,123.19,-86.68,180,top
+Q4,AO3400A,SOT-23_Handsoldering,123.19,-86.68,0,top
 R1,10k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,123.46,-82.551,0,top
 R2,10k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,123.46,-78.741,180,top
 R3,10k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,158.496,-71.215222,0,top
