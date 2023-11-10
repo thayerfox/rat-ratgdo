@@ -65,11 +65,11 @@
       39,
       40
     ],
-    "visible_layers": "800b3ff_ffffffff",
+    "visible_layers": "8003f55_7fffffff",
     "zone_display_mode": 0
   },
   "meta": {
-    "filename": "RatGDO-OpenSource-D1Mini-ESP8266.kicad_prl",
+    "filename": "RatGDO-OpenSource-D1Mini-ESP8266-Tubez.kicad_prl",
     "version": 3
   },
   "project": {
