@@ -19,24 +19,33 @@ The PCB schematic here does not describe any circuitry other than the serial lin
 
 **If you want to buy a pre-made ratgdo setup, purchase it [from Paul Wieland](https://github.com/PaulWieland/ratgdo).**
 
-![PCB Link](https://github.com/Kaldek/rat-ratgdo/blob/main/schematics/ratgdo%20open%20source_schem_v8.png)
+![PCB Link](https://github.com/Kaldek/rat-ratgdo/blob/main/schematics/ratgdo%20open%20source_schem_v9.png)
 
 See images of a [working breadboard prototype](https://github.com/Kaldek/rat-ratgdo/blob/main/images/Breadboard_working.png) and the [subsequent soldered prototype using a D1 shield](https://github.com/Kaldek/rat-ratgdo/blob/main/images/Simple%20prototype%20using%20D1%20shield.jpg).  Both of these prototypes are using 2n7000 MOSFETs exclusively, but that is because they are prototypes and long term reliability of data transmission when using the 2n7000 has not been confirmed.  See the section below on needed components for context.
 
 ## Components needed
 This schematic assumes the use of through-hole components.  If you wish to use SMD components, please refer to the [FAQ](https://github.com/Kaldek/rat-ratgdo/blob/main/FAQ.md#what-if-i-want-to-use-sot-23-smd-components).
 
-Aside from the obvious requirement of a [supported ESP-32 or ESP8266 board](https://github.com/Kaldek/rat-ratgdo/blob/main/Supported%20Boards.md) flashed with the [ESPHome version](https://github.com/ratgdo/esphome-ratgdo), you will need 3x 10 kohm (kilo-ohm) resistors, one 2n7000 N-channel MOSFET (TO-92 package is easiest) and one RFP30N06LE MOSFET.  It is also recommended you aquire a suitable 3-post screw terminal and some red, white, and black wire for connecting to the door opener.  These connections are very low current, so you can get away with fairly thin wire.
+Aside from the obvious requirement of a [supported ESP-32 or ESP8266 board](https://github.com/Kaldek/rat-ratgdo/blob/main/Supported%20Boards.md) flashed with the [ESPHome version](https://github.com/ratgdo/esphome-ratgdo), you will need 3x 10 kohm (kilo-ohm) resistors, and two 2n7000 N-channel MOSFET (TO-92 package is easiest).  It is also recommended you aquire a suitable 3-post screw terminal and some red, white, and black wire for connecting to the door opener.  These connections are very low current, so you can get away with fairly thin wire.
 
-**Note:** If you cannot source an RFP30N06LE and you're really stuck you can use another 2n7000 MOSFET, however this is borderline for switching using 3.3v logic.
-
-**WARNING!** This schematic alone will not work with a "raw" ESP8266 without the D1 mini board.  Certain models of ESP8266 will not boot without some pullup resistors.  This is not to say that we can't add these distinctions and clarifications in future (e.g., which ESP model to buy such as ESP-12S vs ESP-12F) but for now, this project lacks that guidance.
+**Note:** Our simple through-hole Bill Of Materials uses 2n7000 MOSFETs for both RX and TX, however depending on the manufacturere of your 2n7000 and its production batch, it might not be 100% reliable for the TX circuit.  There are many examples working using the 2n7000 however, so there is a very high chance it will work.
 
 
 ## INSTALL REQUIREMENTS
 Due the schematics we have provided and how they are laid out, you must use the ESPHome fork of ratgdo and - for ESP8266 based boards - select the blue v2.5 board on the ESPhome [web installer page](https://ratgdo.github.io/esphome-ratgdo/).  For ESP-32 based boards the above does not currently apply and you must use the v2.0 installer and follow our ESP-32 schematic we provide in the Supported Boards page.
 
 For the ESP8266 based boards, if installing using Paul Wieland's native ratgdo installer and you install for a v2.0 board, you must wire your TX to D4 (GPIO2) rather than D1 (GPIO5). 
+
+## Having a PCB printed
+You may use the files from the [schematics folder](https://github.com/Kaldek/rat-ratgdo/tree/main/kicad_files) to have your own PCB printed.  We provide an example of what these boards would look like when printed and populated, ready for a Wemos D1 Mini module.
+
+![3D render of printed PCB](https://github.com/Kaldek/rat-ratgdo/blob/main/images/3D%20render%20of%20schematic.png)
+
+### Schematic options
+We provide a few options of schematic files suitable for sending to a PCB printing company.  Currently provided are:
+- [Wemos D1 Mini ESP8266](https://github.com/Kaldek/rat-ratgdo/tree/main/kicad_files/D1%20Mini%20-%20ESP8266)
+- [Wemos D1 Mini ESP32](https://github.com/Kaldek/rat-ratgdo/tree/main/kicad_files/D1%20Mini%20-%20ESP32) (massive overkill for ratgdo but it's your choice!)
+- [Bare ESP8266 module](https://github.com/Kaldek/rat-ratgdo/tree/main/kicad_files/Bare%20ESP8266)
 
 ## How the ratgdo circuit works
 The ratgdo circuitry which we cover in this project consists of two sections; Garage Door control and obstruction sensors.
