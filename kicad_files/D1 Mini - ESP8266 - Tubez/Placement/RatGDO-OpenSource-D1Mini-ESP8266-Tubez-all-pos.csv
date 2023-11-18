@@ -14,7 +14,7 @@ Q3,AO3400A,SOT-23_Handsoldering,122.912,-70.612,0,top
 Q4,AO3400A,SOT-23_Handsoldering,123.19,-85.532,0,top
 R1,10k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,123.444,-81.28,0,top
 R2,10k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,123.46,-78.741,180,top
-R3,10k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,157.988,-68.58,180,top
+R3,10k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,157.988,-68.58,0,top
 R4,10k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,124.46,-74.66,90,top
 R5,10k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,124.714,-89.646,90,top
 R6,10k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,132.588,-106.95,90,top
