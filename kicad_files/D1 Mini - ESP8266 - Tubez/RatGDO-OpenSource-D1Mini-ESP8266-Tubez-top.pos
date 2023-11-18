@@ -1,0 +1,30 @@
+### Footprint positions - created on Sat Nov 18 11:28:25 2023 ###
+### Printed by KiCad version 7.0.9
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val                   Package                                                        PosX       PosY       Rot  Side
+C1        10uF/50V              C_0805_2012Metric_Pad1.18x1.45mm_HandSolder                149.6060  -118.3425   90.0000  top
+C2        22uF/10V              C_0805_2012Metric_Pad1.18x1.45mm_HandSolder                149.6060  -113.3055  -90.0000  top
+D1        1N4148WS              D_SOD-323_HandSoldering                                    152.1660  -100.5840  180.0000  top
+D2        1N4148WS              D_SOD-323_HandSoldering                                    152.1660   -98.0440  180.0000  top
+D3        1N4148WS              D_SOD-323_HandSoldering                                    152.1660   -95.5040  180.0000  top
+D4        B5819W                D_SOD-123                                                  134.8740  -117.8560   90.0000  top
+F1        500mA                 Fuse_0805_2012Metric_Pad1.15x1.40mm_HandSolder             132.0800  -117.3480   90.0000  top
+J1        Screw_Terminal_01x03  TerminalBlock_Phoenix_MKDS-1,5-3_1x03_P5.00mm_Horizontal   124.7140   -97.2820  -90.0000  top
+J2        Conn_01x11            PinHeader_1x11_P2.54mm_Vertical                            161.7980  -110.4900  180.0000  top
+J3        Screw_Terminal_01x02  TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal   124.7140  -113.5380  -90.0000  top
+Q1        2N7002                SOT-23_Handsoldering                                       158.8380   -78.4860  180.0000  top
+Q2        AO3400A               SOT-23_Handsoldering                                       158.8380   -74.3560    0.0000  top
+Q3        AO3400A               SOT-23_Handsoldering                                       122.9120   -70.6120  180.0000  top
+Q4        AO3400A               SOT-23_Handsoldering                                       123.1900   -85.5320  180.0000  top
+R1        10k                   R_0805_2012Metric_Pad1.20x1.40mm_HandSolder                123.4440   -81.2800    0.0000  top
+R2        10k                   R_0805_2012Metric_Pad1.20x1.40mm_HandSolder                123.4600   -78.7410  180.0000  top
+R3        10k                   R_0805_2012Metric_Pad1.20x1.40mm_HandSolder                157.9880   -68.5800    0.0000  top
+R4        10k                   R_0805_2012Metric_Pad1.20x1.40mm_HandSolder                124.4600   -74.6600   90.0000  top
+R5        10k                   R_0805_2012Metric_Pad1.20x1.40mm_HandSolder                124.7140   -89.6460   90.0000  top
+R6        10k                   R_0805_2012Metric_Pad1.20x1.40mm_HandSolder                132.5880  -106.9500   90.0000  top
+R7        10k                   R_0805_2012Metric_Pad1.20x1.40mm_HandSolder                159.7820   -81.7880  180.0000  top
+R8        1k                    R_0805_2012Metric_Pad1.20x1.40mm_HandSolder                157.9880   -71.1200  180.0000  top
+U1        WeMos_D1_mini         WEMOS_D1_mini_light                                        129.5475   -66.0400    0.0000  top
+U2        K7805-500R3           Converter_DCDC_RECOM_R-78HB-0.5_THT                        160.0200  -119.3800  180.0000  top
+## End
