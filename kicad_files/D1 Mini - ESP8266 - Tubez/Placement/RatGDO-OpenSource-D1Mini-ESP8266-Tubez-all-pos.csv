@@ -11,12 +11,12 @@ J3,Screw_Terminal_01x02,"TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizonta
 Q1,2N7002,SOT-23_Handsoldering,158.838,-78.486,0,top
 Q2,AO3400A,SOT-23_Handsoldering,158.838,-74.356,180,top
 Q3,AO3400A,SOT-23_Handsoldering,122.912,-70.612,0,top
-Q4,AO3400A,SOT-23_Handsoldering,123.19,-86.68,0,top
+Q4,AO3400A,SOT-23_Handsoldering,123.19,-85.532,0,top
 R1,10k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,123.444,-81.28,0,top
 R2,10k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,123.46,-78.741,180,top
 R3,10k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,157.988,-68.58,180,top
-R4,10k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,123.46,-74.422,180,top
-R5,10k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,123.714,-90.17,180,top
+R4,10k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,124.46,-74.66,90,top
+R5,10k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,124.714,-89.646,90,top
 R6,10k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,132.588,-106.95,90,top
 R7,10k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,159.782,-81.788,180,top
 R8,1k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,157.988,-71.12,180,top
