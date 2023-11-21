@@ -4,8 +4,8 @@ C2,22uF/10V,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,149.606,-113.3055,-90,to
 D1,1N4148WS,D_SOD-323_HandSoldering,152.166,-100.584,180,top
 D2,1N4148WS,D_SOD-323_HandSoldering,152.166,-98.044,180,top
 D3,1N4148WS,D_SOD-323_HandSoldering,152.166,-95.504,180,top
-D4,B5819W,D_SOD-123,134.874,-117.856,90,top
-F1,500mA,Fuse_0805_2012Metric_Pad1.15x1.40mm_HandSolder,132.08,-117.348,90,top
+D4,B5819W,D_SOD-123,135.636,-118.618,90,top
+F1,500mA,Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder,132.334,-118.618,90,top
 J1,Screw_Terminal_01x03,"TerminalBlock_Phoenix_MKDS-1,5-3_1x03_P5.00mm_Horizontal",124.714,-97.282,-90,top
 J2,Conn_01x11,PinHeader_1x11_P2.54mm_Vertical,161.798,-110.49,180,top
 J3,Screw_Terminal_01x02,"TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal",124.714,-113.538,-90,top
