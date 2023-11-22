@@ -1914,6 +1914,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 001a6687-8929-4175-a563-b21713d3d6b9)
   )
+  (text "TX:Off = Idle \nTX:On = ESP Active\n\nRX:Off = GDO or ESP Active \nRX:On = Idle but GDO Connected"
+    (at 122.936 74.168 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 1d440e16-8ab0-47c4-bea8-4bab0759b04a)
+  )
   (text "  id_prefix: ratgdov25\n  friendly_name: \"RATGDOv2.5\"\n  uart_tx_pin: D1\n  uart_rx_pin: D2\n  input_obst_pin: D7\n  status_door_pin: D0\n  status_obstruction_pin: D8\n  dry_contact_open_pin: D5\n  dry_contact_close_pin: D6\n  dry_contact_light_pin: D3"
     (at 27.94 158.75 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
