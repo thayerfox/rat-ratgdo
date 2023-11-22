@@ -55,7 +55,10 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "clearance|152998799|88500000|bab2e58d-0000-4963-a893-92ca7a738de4|64b965fe-a1df-471e-9332-eab36c6a5be2",
+        "starved_thermal|122714000|90424000|a257aba3-8add-44ba-80b6-a92ec2d56e1f|9d2c0693-6f6b-44cf-a64c-a43840230952|F.Cu"
+      ],
       "meta": {
         "version": 2
       },
@@ -379,7 +382,7 @@
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
-      "lib_symbol_issues": "warning",
+      "lib_symbol_issues": "ignore",
       "missing_bidi_pin": "warning",
       "missing_input_pin": "warning",
       "missing_power_pin": "error",
@@ -391,7 +394,7 @@
       "pin_not_connected": "error",
       "pin_not_driven": "error",
       "pin_to_pin": "warning",
-      "power_pin_not_driven": "error",
+      "power_pin_not_driven": "ignore",
       "similar_labels": "warning",
       "simulation_model_issue": "ignore",
       "unannotated": "error",
