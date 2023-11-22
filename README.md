@@ -11,30 +11,31 @@ Credit and inspiration for this work goes to [@rlowens](https://github.com/rlowe
 ## Overview
 This is an open source schematic for the ratgdo, based on the v2.5 [ratgdo](https://github.com/PaulWieland/ratgdo) PCB and code but installed using the [ESPHome fork](ESPHome%20vs%20native%20ratgdo.md) of ratgdo.  We feel there is cognitive dissonance between the refusal to provide (and deleting requests for) schematics for the ratgdo PCB against the ratgdo project's use of open source code, open source licensing, and libraries used by other open source projects, as well as the inception reasoning for the ratgdo project which was to ensure that nobody is at the mercy of a third party that might stop selling the PCBs.
 
-This project was created to allow people who need a ratgdo solution for their garage door opener but either cannot, or choose not to, source the solution from Paul Wieland and be locked into that 3rd party. It also ensures that the PCB can be recreated as and when the project maintainer gives up on the project (much like Chamberlain themselves might do with their MyQ Cloud Service) and stops selling PCBs.
+This project was created to allow people who need a ratgdo solution for their garage door opener but either cannot, or choose not to, source the solution from Paul Wieland. It also ensures that the PCB can be recreated as and when the project maintainer gives up on the project (much like Chamberlain themselves might do with their MyQ Cloud Service) and stops selling PCBs.
 
 
 ### You are expected to know how to create the described circuit using your own prototyping skills.  That is, this project is for people who can solder well and know how to read schematics
 
 
-The PCB schematic here does not describe any circuitry other than the serial line garage door control and obstruction sensor.  All other optional features provided by ratgdo could also be reverse engineered as needed.
+The ***basic*** PCB schematic shown here in the Readme does not describe any circuitry other than the serial line garage door control and obstruction sensor.  All other optional features provided by ratgdo can be reverse engineered as needed, or may already be solved by one of the schematics the community has uploaded!
 
 **If you want to buy a pre-made ratgdo setup, purchase it [from Paul Wieland](https://github.com/PaulWieland/ratgdo).**
 
 ![PCB Link](schematics/ratgdo%20open%20source_schem_v9.png)
+_Simple basic schematic for a Wemos D1 Mini based module_
 
 See images of a [working breadboard prototype](images/Breadboard_working.png) and the [subsequent soldered prototype using a D1 shield](images/Simple%20prototype%20using%20D1%20shield.jpg).  Both of these prototypes are using 2n7000 MOSFETs exclusively, but that is because they are prototypes and long term reliability of data transmission when using the 2n7000 has not been confirmed.  See the section below on needed components for context.
 
-## Components needed
-This schematic assumes the use of through-hole components.  If you wish to use SMD components, please refer to the [FAQ](FAQ.md#what-if-i-want-to-use-sot-23-smd-components).
+## Components needed for basic functionality
+The basic schematic shown above assumes the use of through-hole components.  If you wish to use SMD components, please refer to the [FAQ](FAQ.md#what-if-i-want-to-use-sot-23-smd-components), and you can also check out the community-provided schematics, which include SMD-based designs.
 
-Aside from the obvious requirement of a [supported ESP-32 or ESP8266 board](Supported%20Boards.md) flashed with the [ESPHome version](https://github.com/ratgdo/esphome-ratgdo), you will need 3x 10 kohm (kilo-ohm) resistors, and two 2n7000 N-channel MOSFET (TO-92 package is easiest).  It is also recommended you aquire a suitable 3-post screw terminal and some red, white, and black wire for connecting to the door opener.  These connections are very low current, so you can get away with fairly thin wire.
+For this basic design, aside from the obvious requirement of a [supported ESP-32 or ESP8266 board](Supported%20Boards.md) flashed with the [ESPHome version](https://github.com/ratgdo/esphome-ratgdo), you will need 3x 10 kohm (kilo-ohm) resistors, and two 2n7000 N-channel MOSFET (TO-92 package is easiest).  It is also recommended you aquire a suitable 3-post screw terminal and some red, white, and black wire for connecting to the door opener.  These connections are very low current, so you can get away with fairly thin wire.
 
 **Note:** Our simple through-hole Bill Of Materials uses 2n7000 MOSFETs for both RX and TX, however depending on the manufacturere of your 2n7000 and its production batch, it might not be 100% reliable for the TX circuit.  There are many examples working using the 2n7000 however, so there is a very high chance it will work.
 
 
 ## INSTALL REQUIREMENTS
-Due the schematics we have provided and how they are laid out, you must use the ESPHome fork of ratgdo and - for ESP8266 based boards - select the blue v2.5 board on the ESPhome [web installer page](https://ratgdo.github.io/esphome-ratgdo/).  For ESP-32 based boards the above does not currently apply and you must use the v2.0 installer and follow our ESP-32 schematic we provide in the Supported Boards page.
+For both this basic schematic shown here in the Readme and how they it is laid out, you must use the ESPHome fork of ratgdo and - for ESP8266 based boards - select the blue v2.5 board on the ESPhome [web installer page](https://ratgdo.github.io/esphome-ratgdo/).  For ESP-32 based boards the above does not currently apply and you must use the v2.0 installer and follow our basic ESP-32 schematic we provide in the Supported Boards page.
 
 For the ESP8266 based boards, if installing using Paul Wieland's native ratgdo installer and you install for a v2.0 board, you must wire your TX to D4 (GPIO2) rather than D1 (GPIO5).
 
@@ -44,8 +45,13 @@ You may use the files from the [schematics folder](kicad_files) to have your own
 ![3D render of printed PCB](images/3D%20render%20of%20schematic.png)
 _An example of the D1 Mini ESP32 Wide Format_
 
+Here is an example of a printed PCB with a raw ESP8266 and an LM2596 module, for being powered by a GDO with the battery backup capabilities.
+![Printed PCB using ESP8266 and LM2596](https://github.com/Kaldek/rat-ratgdo/blob/main/images/Printed%20PCB%20with%20ESP8266%20and%20LM2596.jpg)
+_An example of a PCB using a bare ESP8266 and LM2596 module_
+
+
 ### Schematic options
-We provide a few options of schematic files suitable for sending to a PCB printing company.  Currently provided are:
+The community has provided a few options of schematic files suitable for sending to a PCB printing company.
 - [Wemos D1 Mini ESP8266](kicad_files/D1%20Mini%20-%20ESP8266)
 - [Wemos D1 Mini ESP32](kicad_files/D1%20Mini%20-%20ESP32) (massive overkill for ratgdo but it's your choice!)
 - [Wemos D1 Mini ESP32 Wide Format](kicad_files/D1%20Mini%20Wide%20-%20ESP32)
